@@ -1,0 +1,10 @@
+streamlit
+faiss-cpu
+pandas
+pydantic
+requests
+beautifulsoup4
+sentence-transformers
+openai
+python-dotenv
+

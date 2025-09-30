@@ -1,0 +1,14 @@
+# virtual env
+.venv/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# other
+.env
+*.DS_Store
+artifacts/
+
