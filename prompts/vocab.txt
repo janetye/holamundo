@@ -1,0 +1,3 @@
+Extract 10-15 key vocabulary words from the context for intermediate learners.
+Return {"vocabulary":[{"spanish":"...","english":"...","pos":"noun|verb|adj|adv","example":"..."}]}
+Only return JSON

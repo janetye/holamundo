@@ -1,0 +1,3 @@
+Write a B1 diaglogue using context vocab.
+Return {"title":"...","lines":[{"speaker":"A","es":"..."},...],"glossary":[{"spanish":"...","english":"..."}]}
+Only return JSON
