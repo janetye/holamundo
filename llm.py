@@ -2,10 +2,17 @@ import os
 import json
 from anthropic import Anthropic
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 
-client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+# Try st.secrets first (for Streamlit Cloud), fall back to env var (for local)
+try:
+    api_key = st.secrets.get("ANTHROPIC_API_KEY") or os.getenv("ANTHROPIC_API_KEY")
+except Exception:
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+
+client = Anthropic(api_key=api_key)
 
 def get_mock_data(prompt):
     """Return mock data for testing without calling the LLM."""
