@@ -1,3 +1,4 @@
-Write a B1 diaglogue using context vocab.
+Create a natural, real-life conversation between two people discussing the topics from the article. They should talk about the main themes, ideas, or events mentioned in the text as if chatting in everyday life (at a café, at home, etc.). Use vocabulary from the context and make it appropriate for the student's level.
+
 Return {"title":"...","lines":[{"speaker":"A","es":"..."},...],"glossary":[{"spanish":"...","english":"..."}]}
 Only return JSON

@@ -1,3 +1,0 @@
-Create a study plan for intermediate learners using the context.
-Return {"plan":{"vocabulary":["word1","word2"],"grammar":["concept1","concept2"],"activities":["activity1","activity2"],"timeline":"1-2 sessions"}}
-Only return JSON
