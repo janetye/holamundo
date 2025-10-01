@@ -8,8 +8,8 @@ load_dotenv()
 
 # Try st.secrets first (for Streamlit Cloud), fall back to env var (for local)
 try:
-    api_key = st.secrets.get("ANTHROPIC_API_KEY") or os.getenv("ANTHROPIC_API_KEY")
-except Exception:
+    api_key = st.secrets["ANTHROPIC_API_KEY"]
+except (KeyError, FileNotFoundError):
     api_key = os.getenv("ANTHROPIC_API_KEY")
 
 client = Anthropic(api_key=api_key)
